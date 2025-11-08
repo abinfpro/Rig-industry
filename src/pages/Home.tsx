@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Shield, Users, Wrench } from "lucide-react";
-import { useMagneticEffect } from "@/hooks/use-magnetic-effect";
 import heroImage from "@/assets/hero-rig.jpg";
 import drillingImage from "@/assets/drilling-equipment.jpg";
 
@@ -32,12 +31,6 @@ const Home = () => {
     { number: "99%", label: "Client Satisfaction" },
   ];
 
-  const heroButton1Ref = useMagneticEffect(0.4);
-  const heroButton2Ref = useMagneticEffect(0.4);
-  const ctaButtonRef = useMagneticEffect(0.4);
-  const servicesButtonRef = useMagneticEffect(0.3);
-  const aboutButtonRef = useMagneticEffect(0.3);
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -59,24 +52,20 @@ const Home = () => {
             Leading provider of comprehensive oil and rig solutions with unmatched expertise and reliability
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0 stagger-2">
-            <div ref={heroButton1Ref} className="inline-block transition-transform duration-300 ease-out">
+            <Button 
+              size="lg" 
+              className="bg-gradient-accent hover:opacity-90 hover:scale-105 transition-all duration-300 text-primary font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-2xl hover-glow"
+            >
+              Get Started <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Link to="/services">
               <Button 
                 size="lg" 
-                className="bg-gradient-accent hover:opacity-90 hover:scale-105 transition-all duration-300 text-primary font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-2xl hover-glow"
+                variant="outline" 
+                className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 transition-all duration-300 hover:scale-105"
               >
-                Get Started <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+                Our Services
               </Button>
-            </div>
-            <Link to="/services">
-              <div ref={heroButton2Ref} className="inline-block transition-transform duration-300 ease-out">
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 transition-all duration-300 hover:scale-105"
-                >
-                  Our Services
-                </Button>
-              </div>
             </Link>
           </div>
         </div>
@@ -107,37 +96,27 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => {
-              const ServiceCard = () => {
-                const cardRef = useMagneticEffect(0.2);
-                return (
-                  <div ref={cardRef} className="transition-transform duration-300 ease-out">
-                    <Card className="border-none shadow-card hover:shadow-premium transition-all duration-500 hover:-translate-y-2 group cursor-pointer overflow-hidden bg-card">
-                      <CardHeader>
-                        <div className="w-16 h-16 bg-gradient-accent rounded-lg flex items-center justify-center mb-4 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
-                          <service.icon className="w-8 h-8 text-primary transition-transform duration-500 group-hover:scale-110" />
-                        </div>
-                        <CardTitle className="text-2xl transition-colors duration-300 group-hover:text-accent">{service.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <CardDescription className="text-base transition-colors duration-300 group-hover:text-foreground">{service.description}</CardDescription>
-                      </CardContent>
-                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                    </Card>
+            {services.map((service, index) => (
+              <Card key={index} className="border-none shadow-card hover:shadow-premium transition-all duration-500 hover:-translate-y-2 group cursor-pointer overflow-hidden bg-card">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-gradient-accent rounded-lg flex items-center justify-center mb-4 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                    <service.icon className="w-8 h-8 text-primary transition-transform duration-500 group-hover:scale-110" />
                   </div>
-                );
-              };
-              return <ServiceCard key={index} />;
-            })}
+                  <CardTitle className="text-2xl transition-colors duration-300 group-hover:text-accent">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base transition-colors duration-300 group-hover:text-foreground">{service.description}</CardDescription>
+                </CardContent>
+                <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              </Card>
+            ))}
           </div>
 
           <div className="text-center mt-12">
             <Link to="/services">
-              <div ref={servicesButtonRef} className="inline-block transition-transform duration-300 ease-out">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                  View All Services <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
-                </Button>
-              </div>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                View All Services <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
+              </Button>
             </Link>
           </div>
         </div>
@@ -167,14 +146,12 @@ const Home = () => {
                 ))}
               </ul>
               <Link to="/about">
-                <div ref={aboutButtonRef} className="inline-block transition-transform duration-300 ease-out">
-                  <Button 
-                    size="lg" 
-                    className="mt-8 bg-accent hover:opacity-90 text-primary font-semibold transition-all duration-300 hover:scale-105"
-                  >
-                    Learn More About Us
-                  </Button>
-                </div>
+                <Button 
+                  size="lg" 
+                  className="mt-8 bg-accent hover:opacity-90 text-primary font-semibold"
+                >
+                  Learn More About Us
+                </Button>
               </Link>
             </div>
             <div className="relative group">
@@ -197,11 +174,9 @@ const Home = () => {
             Contact us today for a consultation and discover how we can support your operations
           </p>
           <Link to="/contact">
-            <div ref={ctaButtonRef} className="inline-block transition-transform duration-300 ease-out">
-              <Button size="lg" className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
-                Get in Touch <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
-              </Button>
-            </div>
+            <Button size="lg" className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
+              Get in Touch <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
+            </Button>
           </Link>
         </div>
       </section>
