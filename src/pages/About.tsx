@@ -26,13 +26,13 @@ const About = () => {
     },
   ];
 
-  const milestones = [
-    { year: "1998", event: "Company Founded" },
-    { year: "2005", event: "Expanded Operations Internationally" },
-    { year: "2012", event: "Reached 250+ Completed Projects" },
-    { year: "2018", event: "Implemented Advanced Safety Protocols" },
-    { year: "2023", event: "Achieved 500+ Projects Milestone" },
-  ];
+  // const milestones = [
+  //   { year: "1998", event: "Company Founded" },
+  //   { year: "2005", event: "Expanded Operations Internationally" },
+  //   { year: "2012", event: "Reached 250+ Completed Projects" },
+  //   { year: "2018", event: "Implemented Advanced Safety Protocols" },
+  //   { year: "2023", event: "Achieved 500+ Projects Milestone" },
+  // ];
 
   return (
     <div className="min-h-screen pt-20">
@@ -40,7 +40,7 @@ const About = () => {
       <section className="py-20 bg-gradient-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">About OilRig Solutions</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">About Golfoil Solutions</h1>
             <p className="text-xl text-primary-foreground/90">
               A legacy of excellence in oil and rig operations, built on expertise, innovation, and unwavering commitment to safety
             </p>
@@ -56,13 +56,13 @@ const About = () => {
               <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  Founded in 1998, OilRig Solutions began with a vision to revolutionize the oil and rig industry through innovative solutions and exceptional service delivery. Over the past 25 years, we have grown from a small operation to become a trusted leader in the energy sector.
+                Golfoil began with a clear vision — to transform the energy industry through innovation, technical excellence, and unmatched service quality. From a small operation to a globally trusted provider, our growth has been driven by a commitment to performance, reliability, and sustainable practices.
                 </p>
                 <p>
-                  Our journey has been marked by continuous innovation, strategic partnerships, and an unwavering commitment to safety and environmental responsibility. Today, we serve clients across multiple continents, delivering comprehensive solutions for complex energy challenges.
+                Our progress is shaped by continuous innovation, strategic industry partnerships, and a strong focus on safety and environmental responsibility. Today, we support clients across multiple regions, delivering end-to-end energy solutions tailored to complex operational needs.
                 </p>
                 <p>
-                  With a team of over 50 expert engineers and technicians, we combine decades of experience with cutting-edge technology to provide unparalleled service quality. Our track record speaks for itself – over 500 successful projects and a 99% client satisfaction rate.
+                Backed by a team of highly skilled engineers and technicians, we combine extensive experience with the latest technology to maintain industry-leading standards. With 500+ successful projects and a 99% client satisfaction rate, Golfoil remains dedicated to delivering excellence across every operation.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">Our Journey</h2>
@@ -130,10 +130,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Stats */}
-      <section className="py-20 bg-gradient-primary text-primary-foreground">
+      {/* <section className="py-20 bg-gradient-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Our Team by Numbers</h2>
@@ -157,7 +157,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

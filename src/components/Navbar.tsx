@@ -22,10 +22,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-md">
-              <span className="text-2xl font-bold text-primary">OR</span>
+            <div className="w-15 h-15 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+              <img src="./src/assets/logo.jpg" alt="Logo" className="w-12 h-12 object-contain" />
             </div>
-            <span className="text-xl font-bold text-primary hidden sm:block transition-colors duration-300 group-hover:text-accent">OilRig Solutions</span>
+            <span className="text-xl font-bold text-primary hidden sm:block transition-colors duration-300 group-hover:text-accent">GOLFOIL</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -43,9 +43,9 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-gradient-accent hover:opacity-90 text-primary font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            {/* <Button className="ml-4 bg-gradient-accent hover:opacity-90 text-primary font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Get Quote
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}

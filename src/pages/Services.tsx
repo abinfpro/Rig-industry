@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { 
   Wrench, 
   Shield, 
-  Construction, 
+  Ship, 
   Settings, 
   ClipboardCheck, 
   Zap,
@@ -14,25 +14,25 @@ import {
 const Services = () => {
   const services = [
     {
-      icon: Construction,
-      title: "Drilling Operations",
-      description: "Comprehensive drilling services utilizing state-of-the-art equipment and techniques for optimal well performance.",
+      icon: Ship,
+      title: "Ship Management & Operations",
+      description: "We offer full-scale ship management services designed to optimize performance, safety, and compliance. From technical support to crew handling and maintenance planning, our team ensures that each vessel under our care operates smoothly and cost-effectively.",
       features: [
-        "Onshore & offshore drilling",
-        "Directional drilling expertise",
-        "Well planning and design",
-        "Real-time monitoring systems",
+        "Technical vessel management",
+        "Crew management & training",
+        "Safety & regulatory compliance",
+        "Performance & fuel optimization",
       ],
     },
     {
       icon: Wrench,
-      title: "Equipment Maintenance",
-      description: "Preventive and corrective maintenance services to ensure maximum uptime and operational efficiency.",
+      title: "Crude Oil and Refined Oil Products Trading (International)",
+      description: "Golfoil connects producers and buyers of crude oil and refined petroleum products through strategic trade facilitation. With a focus on transparency, legal compliance, and contract reliability, we ensure successful international transactions.",
       features: [
-        "Scheduled maintenance programs",
-        "Emergency repair services",
-        "Equipment upgrades",
-        "Performance optimization",
+        "Global crude & refined product sourcing",
+        "Vendor and buyer qualification",
+        "Contract & documentation management",
+        "Secure logistics & delivery coordination",
       ],
     },
     {
@@ -167,9 +167,9 @@ const Services = () => {
               Every project is unique. Let's discuss how we can tailor our services to meet your specific needs.
             </p>
             <Link to="/contact">
-              <Button size="lg" className="bg-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6">
-                Contact Our Team <ArrowRight className="ml-2" />
-              </Button>
+              <Button size="lg" className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
+              Contact Our Team  <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
+            </Button>
             </Link>
           </div>
         </div>

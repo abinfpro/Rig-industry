@@ -26,12 +26,12 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["1234 Industrial Boulevard", "Houston, TX 77002", "United States"],
+      details: ["P1-ELOB Office No.Hamriyah Free Zone Sharjah United Arab Emirates"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568", "Toll Free: 1-800-OILRIG"],
+      details: ["050-4838939"],
     },
     {
       icon: Mail,
@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 3:00 PM", "24/7 Emergency Support"],
+      details: ["9:00 AM - 5:00 PM", "24/7 Emergency Support"],
     },
   ];
 
@@ -178,11 +178,12 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
             {[
-              { region: "North America", office: "Houston, TX", countries: "USA, Canada, Mexico" },
-              { region: "Europe", office: "Aberdeen, Scotland", countries: "UK, Norway, Netherlands" },
-              { region: "Middle East", office: "Dubai, UAE", countries: "UAE, Saudi Arabia, Qatar" },
+             {
+              region: "Middle East",office: "P1-ELOB Office, Hamriyah Free Zone, Sharjah",countries: "United Arab Emirates" },
+              // { region: "Europe", office: "Aberdeen, Scotland", countries: "UK, Norway, Netherlands" },
+              // { region: "Middle East", office: "Dubai, UAE", countries: "UAE, Saudi Arabia, Qatar" },
             ].map((location, index) => (
               <Card key={index} className="border-none shadow-card text-center">
                 <CardHeader>
