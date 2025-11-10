@@ -117,7 +117,9 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Link to="/services">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <Button
+               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 View All Services <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
               </Button>
             </Link>
@@ -152,6 +154,7 @@ const Home = () => {
                 <Button 
                   size="lg" 
                   // className="mt-8 bg-accent text-primary font-semibold"
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                   className="bg-accent mt-8 hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-xl group"
                 >
                   Learn More About Us
@@ -178,7 +181,9 @@ const Home = () => {
             Contact us today for a consultation and discover how we can support your operations
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
+            <Button size="lg" 
+             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
               Get in Touch <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
             </Button>
           </Link>

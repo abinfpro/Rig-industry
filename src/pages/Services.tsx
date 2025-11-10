@@ -167,7 +167,9 @@ const Services = () => {
               Every project is unique. Let's discuss how we can tailor our services to meet your specific needs.
             </p>
             <Link to="/contact">
-              <Button size="lg" className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
+              <Button
+               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              size="lg" className="bg-gradient-accent hover:opacity-90 text-primary font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover-glow group">
               Contact Our Team  <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
             </Button>
             </Link>

@@ -36,6 +36,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className={`px-4 py-2 rounded-md transition-all duration-300 relative ${
                   isActive(link.path)
                     ? "text-accent font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent"
