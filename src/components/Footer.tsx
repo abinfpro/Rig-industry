@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import logo from "../assets/logo.webp";
+
 
 const Footer = () => {
   return (
@@ -10,7 +12,9 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
-              <img src="./src/assets/logo.jpg" alt="Logo" className="w-12 h-12 object-contain" />
+              {/* <img src="./src/assets/logo.jpg" alt="Logo" className="w-12 h-12 object-contain" />
+               */}
+                    <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
               </div>
               <span className="text-lg font-bold">Golfoil Solutions</span>
             </div>
