@@ -23,10 +23,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-15 h-15 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-              {/* <img src="./src/assets/logo.webp" alt="Logo" className="w-12 h-12 object-contain" /> */}
-              <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
-            </div>
+         <div className="w-20 h-20 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-[1.02]">
+            <img src={logo} alt="Logo" className="w-18 h-18 object-contain" />
+          </div>
             <span className="text-xl font-bold text-primary hidden sm:block transition-colors duration-300 group-hover:text-accent">GOLFOIL</span>
           </Link>
 

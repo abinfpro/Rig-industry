@@ -36,7 +36,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@oilrigsolutions.com", "support@oilrigsolutions.com", "careers@oilrigsolutions.com"],
+      details: ["accounts@golfoil.me"],
     },
     {
       icon: Clock,
@@ -182,8 +182,6 @@ const Contact = () => {
             {[
              {
               region: "Middle East",office: "P1-ELOB Office, Hamriyah Free Zone, Sharjah",countries: "United Arab Emirates" },
-              // { region: "Europe", office: "Aberdeen, Scotland", countries: "UK, Norway, Netherlands" },
-              // { region: "Middle East", office: "Dubai, UAE", countries: "UAE, Saudi Arabia, Qatar" },
             ].map((location, index) => (
               <Card key={index} className="border-none shadow-card text-center">
                 <CardHeader>
