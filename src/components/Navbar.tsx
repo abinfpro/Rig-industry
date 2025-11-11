@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo1.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +23,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-         <div className="w-20 h-20 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-[1.02]">
-            <img src={logo} alt="Logo" className="w-18 h-18 object-contain" />
+          <div className="w-30 h-30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-[1.02]">
+            <img src={logo} alt="Logo1" className="w-28 h-28 object-contain" />
           </div>
+
             <span className="text-xl font-bold text-primary hidden sm:block transition-colors duration-300 group-hover:text-accent">GOLFOIL</span>
           </Link>
 
