@@ -2,83 +2,83 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  Wrench, 
-  Shield, 
-  Ship, 
-  Settings, 
-  ClipboardCheck, 
-  Zap,
+  Globe, 
+  FlaskRound, 
+  Fuel, 
+  Droplets, 
+  Layers,
   ArrowRight 
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Ship,
-      title: "Ship Management & Operations",
-      description: "We offer full-scale ship management services designed to optimize performance, safety, and compliance. From technical support to crew handling and maintenance planning, our team ensures that each vessel under our care operates smoothly and cost-effectively.",
+      icon: Globe,
+      title: "Import & Export",
+      description: "Reliable global sourcing and supply of energy products with seamless international trade execution.",
       features: [
-        "Technical vessel management",
-        "Crew management & training",
-        "Safety & regulatory compliance",
-        "Performance & fuel optimization",
+        "End-to-end import & export operations",
+        "Regulatory & customs compliance",
+        "Secure logistics & documentation",
+        "Global supplier & buyer network",
       ],
     },
     {
-      icon: Wrench,
-      title: "Crude Oil and Refined Oil Products Trading (International)",
-      description: "Golfoil connects producers and buyers of crude oil and refined petroleum products through strategic trade facilitation. With a focus on transparency, legal compliance, and contract reliability, we ensure successful international transactions.",
+      icon: FlaskRound,
+      title: "Petrochemicals Trading",
+      description: "Specialized trading of high-quality petrochemical products for industrial and commercial needs.",
       features: [
-        "Global crude & refined product sourcing",
-        "Vendor and buyer qualification",
-        "Contract & documentation management",
-        "Secure logistics & delivery coordination",
+        "Wide petrochemical product range",
+        "Verified supplier partnerships",
+        "Market-driven pricing",
+        "Bulk & custom supply options",
       ],
     },
     {
-      icon: Shield,
-      title: "Safety Consulting",
-      description: "Expert safety consulting services to protect your workforce and ensure regulatory compliance.",
+      icon: Fuel,
+      title: "Diesel Products Trading",
+      description: "Trusted diesel trading services for industrial, commercial, and transportation sectors.",
       features: [
-        "Safety audits and assessments",
-        "HSE training programs",
-        "Risk management strategies",
-        "Compliance certification",
+        "Premium grade diesel supply",
+        "Bulk volume delivery",
+        "Competitive pricing",
+        "Efficient distribution network",
       ],
     },
     {
-      icon: Settings,
-      title: "Well Services",
-      description: "Complete well intervention and workover services to maximize production and extend well life.",
+      icon: Droplets,
+      title: "Petroleum Products Trading",
+      description: "Reliable sourcing and supply of refined petroleum products across global markets.",
       features: [
-        "Well completion services",
-        "Workover operations",
-        "Well stimulation",
-        "Production enhancement",
+        "Refined petroleum product sourcing",
+        "Quality certification & standards",
+        "Flexible contract terms",
+        "Logistics & delivery management",
       ],
     },
     {
-      icon: ClipboardCheck,
-      title: "Project Management",
-      description: "End-to-end project management ensuring on-time, on-budget delivery of complex operations.",
+      icon: Globe,
+      title: "International Crude Oil Trading",
+      description: "Strategic global crude oil sourcing and trading backed by strong market intelligence.",
       features: [
-        "Project planning & execution",
-        "Resource optimization",
-        "Quality assurance",
-        "Stakeholder coordination",
+        "Global crude oil procurement",
+        "Supplier & buyer verification",
+        "Secure contract execution",
+        "Risk & compliance management",
       ],
     },
     {
-      icon: Zap,
-      title: "Technical Support",
-      description: "Round-the-clock technical support and consulting services for all your operational needs.",
+      icon: Layers,
+      title: "Tar & Asphalt Supply & Trading",
+      description: "Supply and trading of tar and asphalt for industrial and infrastructure applications.",
       features: [
-        "24/7 emergency support",
-        "Technical consulting",
-        "Troubleshooting assistance",
-        "Remote monitoring",
+        "High-grade tar & asphalt",
+        "Bulk & project-based supply",
+        "Material quality assurance",
+        "On-time project delivery",
       ],
     },
+    
   ];
 
   return (
@@ -89,7 +89,7 @@ const Services = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
             <p className="text-xl text-primary-foreground/90">
-              Comprehensive solutions designed to meet the diverse needs of the oil and rig industry
+            Global energy sourcing and trading — delivering diesel, fuels, petrochemicals, crude oil, tar, and asphalt with efficiency, transparency, and worldwide reach.
             </p>
           </div>
         </div>
@@ -135,17 +135,17 @@ const Services = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">Our Process</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A systematic approach to delivering exceptional results
+            A structured global trading workflow ensuring reliability, compliance, and efficiency
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
-              { step: "01", title: "Consultation", description: "Understanding your unique requirements and challenges" },
-              { step: "02", title: "Planning", description: "Developing comprehensive strategies and timelines" },
-              { step: "03", title: "Execution", description: "Implementing solutions with precision and expertise" },
-              { step: "04", title: "Support", description: "Ongoing assistance and continuous improvement" },
-            ].map((process, index) => (
+              { step: "01", title: "Market & Client Requirement Analysis", description: "We analyze client needs and market trends for efficient sourcing." },
+              { step: "02", title: "Sourcing & Compliance Verification", description: "We source from trusted suppliers and ensure full regulatory compliance." },
+              { step: "03", title: "Logistics & Trade Execution", description: "We manage secure shipping, customs, and trade operations for smooth delivery." },
+              { step: "04", title: "Delivery & Post-Trade Support", description: "We ensure timely delivery and ongoing client support for lasting partnerships." },              
+             ].map((process, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center text-2xl font-bold text-primary mx-auto mb-4">
                   {process.step}

@@ -65,11 +65,12 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>Drilling Operations</li>
-              <li>Equipment Maintenance</li>
-              <li>Safety Consulting</li>
-              <li>Well Services</li>
-              <li>Project Management</li>
+              <li> Import & Export</li>
+              <li>Petrochemicals Trading</li>
+              <li> Diesel Products Trading              </li>
+              <li>Petroleum Products Trading</li>
+              <li>International Crude Oil Trading</li>
+              <li>Tar & Asphalt Supply & Trading</li>
             </ul>
           </div>
 

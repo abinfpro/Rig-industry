@@ -20,18 +20,18 @@
     const services = [
       {
         icon: Wrench,
-        title: "Professional & Corporate",
-        description: "Delivering engineered solutions backed by industry expertise, innovative technology, and uncompromising quality across every operation.",
+        title: "Fuel & Petroleum Products Trading",
+        description: "We supply and trade diesel, refined fuels, tar, and asphalt to meet industrial, commercial, and infrastructure demands with reliable delivery and quality assurance.",
       },
       {
         icon: Shield,
-        title: "Safety Consulting",
-        description: "Comprehensive safety programs ensuring compliance and protecting your workforce.",
+        title: "Petrochemicals Trading",
+        description: "We source and distribute a wide range of petrochemical products, supporting manufacturing and industrial sectors with consistent supply and trusted global partnerships.",
       },
       {
         icon: Users,
-        title: "Expert Team",
-        description: "Industry-leading professionals with decades of combined experience.",
+        title: "International Crude Oil Import & Export",
+        description: "We specialize in global crude oil procurement and trading, ensuring efficient cross-border logistics, regulatory compliance, and competitive sourcing for international markets.",
       },
     ];
 
@@ -137,14 +137,13 @@
     {/* Hero Content */}
     <div className="container mx-auto px-4 z-10 text-center text-primary-foreground">
       <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up opacity-0">
-        Where Expertise Meets<br />
-        <span className="text-accent bg-clip-text animate-float">Energy Excellence</span>
+      Where Global Energy<br />
+        <span className="text-accent bg-clip-text animate-float">Trade Meets Expertise</span>
       </h1>
 
       <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-primary-foreground/90 animate-fade-in-up opacity-0 stagger-1">
-            Providing end-to-end oilfield and rig services with proven global standards, unmatched technical capability, and seamless execution across every operation.
-            </p>
-
+      Delivering seamless import, export, and international trading of diesel, petroleum products, petrochemicals, crude oil, tar, and asphalt — with assured quality, compliance, and global sourcing efficiency.
+      </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0 stagger-2">
         <Link to="/services">
           <Button 

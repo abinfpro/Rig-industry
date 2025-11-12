@@ -1,28 +1,29 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Target, Users, TrendingUp } from "lucide-react";
 import engineersImage from "@/assets/engineers-team.webp";
+// import bgImg from "../assets/oil-rig-1.webp";
 
 const About = () => {
   const values = [
     {
       icon: Award,
-      title: "Excellence",
-      description: "Committed to delivering the highest quality services in every project we undertake.",
+      title: "Integrity & Compliance",
+      description: "We operate with transparency, adherence to global trade regulations, and ethical sourcing to ensure trust in every transaction.",
     },
     {
       icon: Target,
-      title: "Innovation",
-      description: "Leveraging cutting-edge technology to provide efficient and sustainable solutions.",
+      title: "Operational Excellence",
+      description: "We maintain stringent quality standards, efficient logistics, and reliable supply chains for seamless import, export, and trading operations.",
     },
     {
       icon: Users,
-      title: "Integrity",
-      description: "Building trust through transparency, ethical practices, and reliable partnerships.",
+      title: "Customer-Centric Commitment",
+      description: "We deliver tailored fuel and petroleum solutions, ensuring timely delivery, product quality, and dedicated client support across markets.",
     },
     {
       icon: TrendingUp,
-      title: "Growth",
-      description: "Continuously evolving to meet the changing needs of the energy industry.",
+      title: "Innovation & Sustainable Growth",
+      description: "We leverage modern trading strategies and focus on responsible energy practices to drive long-term value and industry sustainability.",
     },
   ];
 
@@ -38,11 +39,12 @@ const About = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-primary-foreground">
+  {/* style={{ backgroundImage: `url(${bgImg})` }}> */}
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">About Golfoil Solutions</h1>
             <p className="text-xl text-primary-foreground/90">
-              A legacy of excellence in oil and rig operations, built on expertise, innovation, and unwavering commitment to safety
+            Global energy trading experts supplying diesel, fuels, petrochemicals, crude oil, tar, and asphalt with trusted sourcing and smooth international delivery.
             </p>
           </div>
         </div>
@@ -56,14 +58,12 @@ const About = () => {
               <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                Golfoil began with a clear vision — to transform the energy industry through innovation, technical excellence, and unmatched service quality. From a small operation to a globally trusted provider, our growth has been driven by a commitment to performance, reliability, and sustainable practices.
+                Golfoil began with a clear vision — to establish a trusted global presence in energy trading through integrity, strategic sourcing, and consistent service excellence. From a focused trading initiative to a growing international supplier, our journey has been driven by reliability, market expertise, and strong global relationships.
                 </p>
                 <p>
-                Our progress is shaped by continuous innovation, strategic industry partnerships, and a strong focus on safety and environmental responsibility. Today, we support clients across multiple regions, delivering end-to-end energy solutions tailored to complex operational needs.
-                </p>
+                Our growth is built on efficient trade networks, compliance-driven operations, and long-term supplier and buyer partnerships across key energy markets. Today, we support clients across multiple regions, offering seamless import, export, and distribution of diesel, petroleum products, petrochemicals, crude oil, tar, and asphalt.                </p>
                 <p>
-                Backed by a team of highly skilled engineers and technicians, we combine extensive experience with the latest technology to maintain industry-leading standards. With 500+ successful projects and a 99% client satisfaction rate, Golfoil remains dedicated to delivering excellence across every operation.
-                </p>
+                With deep market knowledge, a skilled trading team, and robust logistics capabilities, we deliver secure supply, competitive pricing, and timely execution. Golfoil continues to expand its global footprint, committed to transparent trade practices and delivering dependable energy solutions that power industries worldwide.                </p>
               </div>
             </div>
             <div>
