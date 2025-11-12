@@ -16,11 +16,6 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Message sent successfully! We'll get back to you soon.");
-    setFormData({ name: "", email: "", company: "", phone: "", message: "" });
-  };
 
   const contactInfo = [
     {
@@ -44,6 +39,31 @@ const Contact = () => {
       details: ["Monday to Friday","9:00 AM - 5:00 PM", "24/7 Emergency Support"],
     },
   ];
+
+
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+        let phoneNumber = "971568343223"; // Your WhatsApp number with country code
+          const message = `
+           Name: ${formData.name}
+           Email: ${formData.email}
+           Phone: ${formData.phone}
+           Subject: ${formData.company}
+           Message: ${formData.message}`;
+         const encodedMessage = encodeURIComponent(message.trim());
+         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+         window.open(url, '_blank').focus();
+        // alert("Message sent successfully!");
+        toast.success("Message sent successfully! We'll get back to you soon.");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        message: "",
+      });
+    };
 
   return (
     <div className="min-h-screen pt-20">
