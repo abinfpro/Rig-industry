@@ -74,15 +74,15 @@ const Navbar = () => {
                     ? "text-accent font-semibold bg-secondary"
                     : "text-foreground hover:text-accent hover:bg-secondary"
                 }`}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {setIsOpen(false),window.scrollTo({ top: 0, behavior: "smooth" })}}
               >
                 {link.name}
               </Link>
             ))}
             <div className="px-4 pt-2">
-              <Button className="w-full bg-gradient-accent hover:opacity-90 text-primary font-semibold">
+              {/* <Button className="w-full bg-gradient-accent hover:opacity-90 text-primary font-semibold">
                 Get Quote
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}
