@@ -8,6 +8,8 @@
 
   import heroImage from "../assets/hero-rig.webp";
   import drillingImage from "../assets/drilling-equipment.webp";
+  import Oil from "../assets/oil-rig-1.webp"
+  import ship from "../assets/ship.webp"
   import engineers from "../assets/engineers-team.webp";
   import pipeline from "../assets/pipeline.webp";
 
@@ -116,6 +118,7 @@
     <div className="absolute inset-0 z-0">
       <div className="w-full h-full relative">
         {[
+          ship,
           heroImage,
           drillingImage,
           engineers,
@@ -257,7 +260,7 @@
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-accent opacity-20 rounded-lg blur-xl group-hover:opacity-30 transition-opacity duration-500" />
                 <img 
-                  src={drillingImage} 
+                  src={ship} 
                   alt="Drilling Equipment" 
                   className="rounded-lg shadow-premium relative z-10 transition-transform duration-700 group-hover:scale-105"
                 />

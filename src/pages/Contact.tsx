@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["050-4838939"],
+      details: ["call: 050-4838939","Whatsapp: +971 568343223"],
     },
     {
       icon: Mail,
@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["9:00 AM - 5:00 PM", "24/7 Emergency Support"],
+      details: ["Monday to Friday","9:00 AM - 5:00 PM", "24/7 Emergency Support"],
     },
   ];
 
@@ -178,7 +178,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-3xl mx-auto">
             {[
              {
               region: "Middle East",office: "P1-ELOB Office, Hamriyah Free Zone, Sharjah",countries: "United Arab Emirates" },

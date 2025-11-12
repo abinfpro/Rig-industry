@@ -42,7 +42,7 @@ const About = () => {
   {/* style={{ backgroundImage: `url(${bgImg})` }}> */}
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">About Golfoil Solutions</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">GOLF OIL Energy Solutions</h1>
             <p className="text-xl text-primary-foreground/90">
             Global energy trading experts supplying diesel, fuels, petrochemicals, crude oil, tar, and asphalt with trusted sourcing and smooth international delivery.
             </p>
