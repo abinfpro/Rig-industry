@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="space-y-2">
               <li>
                 <Link to="/" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                   Home
@@ -64,14 +64,15 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li> Import & Export</li>
-              <li>Petrochemicals Trading</li>
-              <li> Diesel Products Trading              </li>
-              <li>Petroleum Products Trading</li>
-              <li>International Crude Oil Trading</li>
-              <li>Tar & Asphalt Supply & Trading</li>
-            </ul>
+            <ul  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+             className="space-y-2 text-sm text-primary-foreground/80">
+             <li><Link to="/services">Import & Export</Link></li>
+             <li><Link to="/services">Petrochemicals Trading</Link></li>
+             <li><Link to="/services">Diesel Products Trading</Link></li>
+             <li><Link to="/services">Petroleum Products Trading</Link></li>
+             <li><Link to="/services">International Crude Oil Trading</Link></li>
+             <li><Link to="/services">Tar & Asphalt Supply & Trading</Link></li>
+           </ul>
           </div>
 
           {/* Contact Info */}
