@@ -81,15 +81,24 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-primary-foreground/80">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
-                <span>P1-ELOB Office No. Hamriyah Free Zone Sharjah United Arab Emirates</span>
+                {/* <span>P1-ELOB Office No. Hamriyah Free Zone Sharjah United Arab Emirates</span> */}
+
+
+                <a href="https://www.google.com/maps/search/?api=1&query=P1-ELOB%20Office%20No.%20Hamriyah%20Free%20Zone%20Sharjah%20United%20Arab%20Emirates" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  P1-ELOB Office No. Hamriyah Free Zone Sharjah, United Arab Emirates
+                  </a>
               </li>
               <li className="flex items-center space-x-2 text-sm text-primary-foreground/80">
                 <Phone size={18} className="flex-shrink-0" />
-                <span>050-4838939</span>
+                {/* <span>050-4838939</span>
+                <a href="">050-4838939</a> */}
+                <a href="tel:+971504838939">+971 50 483 8939</a>
               </li>
               <li className="flex items-center space-x-2 text-sm text-primary-foreground/80">
                 <Mail size={18} className="flex-shrink-0" />
-                <span>accounts@golfoil.me</span>
+                <a href="mailto:accounts@golfoil.me">accounts@golfoil.me</a>
               </li>
             </ul>
           </div>

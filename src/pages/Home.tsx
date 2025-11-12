@@ -38,8 +38,8 @@
     ];
 
     const stats = [
-      { number: "500+", label: "Projects Completed" },
-      { number: "50+", label: "Expert Engineers" },
+      { number: "50+", label: "Completed" },
+      { number: "10+", label: "Trade professionals" },
       { number: "99%", label: "Client Satisfaction" },
     ];
 
@@ -235,8 +235,8 @@
                 <ul className="space-y-4">
                   {[
                     "Industry-leading safety standards",
-                    "State-of-the-art equipment and technology",
-                    "Highly experienced engineering team",
+                    "State-of-the-art professional compliance team",
+                    "Highly experienced trading professionals",
                     "24/7 operational support",
                     "Environmental compliance and sustainability",
                   ].map((item, index) => (
@@ -272,7 +272,7 @@
         {/* CTA Section */}
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-primary mb-6">Ready to Start Your Project?</h2>
+            <h2 className="text-4xl font-bold text-primary mb-6">Ready to Start Your Trade?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Contact us today for a consultation and discover how we can support your operations
             </p>
