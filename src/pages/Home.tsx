@@ -190,7 +190,7 @@
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-primary mb-4">Our Core Services</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive solutions for all your oil and rig operational needs
+                Comprehensive solutions for all your oil and energy needs
               </p>
             </div>
 
