@@ -26,12 +26,12 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["call: 050-4838939","Whatsapp: +971 568343223"],
+      details: ["Call: 050-4838939","Whatsapp: +971 568343223"],
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["accounts@golfoil.me"],
+      details: ["trade@golfoil.me"],
     },
     {
       icon: Clock,

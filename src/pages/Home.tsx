@@ -3,19 +3,12 @@
   import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
   import { Link } from "react-router-dom";
   import { ArrowRight, CheckCircle, Shield, Users, Wrench } from "lucide-react";
-
-
-
   import heroImage from "../assets/hero-rig.webp";
   import drillingImage from "../assets/drilling-equipment.webp";
   import Oil from "../assets/oil-rig-1.webp"
   import ship from "../assets/ship.webp"
   import engineers from "../assets/engineers-team.webp";
   import pipeline from "../assets/pipeline.webp";
-
-
-
-
 
 
   const Home = () => {
@@ -34,6 +27,11 @@
         icon: Users,
         title: "International Crude Oil Import & Export",
         description: "We specialize in global crude oil procurement and trading, ensuring efficient cross-border logistics, regulatory compliance, and competitive sourcing for international markets.",
+      },
+      {
+        icon: Users,
+        title: "Bitumen Trading",
+        description: "We supply and trade premium-grade bitumen products, serving construction, roadworks, and infrastructure projects with reliable sourcing and strong global supply networks.",
       },
     ];
 
@@ -57,62 +55,6 @@
     return (
       <div className="min-h-screen">
         {/* Hero Section */}
-        {/* <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-700 hover:scale-105"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
-          </div>
-          
-          <div className="container mx-auto px-4 z-10 text-center text-primary-foreground">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up opacity-0">
-            Where Expertise Meets 
-              <br />
-              <span className="text-accent bg-clip-text animate-float">Energy Excellence</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-primary-foreground/90 animate-fade-in-up opacity-0 stagger-1">
-            Providing end-to-end oilfield and rig services with proven global standards, unmatched technical capability, and seamless execution across every operation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0 stagger-2">
-            <Link to="/services">
-              <Button 
-                size="lg" 
-                className="bg-gradient-accent hover:opacity-90 hover:scale-105 transition-all duration-300 text-primary font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-2xl hover-glow"
-              >
-                Our Services 
-              </Button>
-              </Link>
-            </div>
-          </div>
-        </section> */}
-
-        {/* Stats Section */}
-        {/* <section className="py-16 bg-secondary">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center group cursor-default">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2 transition-all duration-300 group-hover:scale-110 group-hover:text-accent/80">{stat.number}</div>
-                  <div className="text-muted-foreground font-medium transition-colors duration-300 group-hover:text-foreground">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
     {/* Carousel */}
     <div className="absolute inset-0 z-0">
@@ -160,11 +102,6 @@
     </div>
   </section>
 
-
-
-
-
-
   <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -178,12 +115,6 @@
           </div>
         </section>
 
-
-
-
-
-
-
         {/* Services Overview */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -194,7 +125,7 @@
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {services.map((service, index) => (
                 <Card key={index} className="border-none shadow-card hover:shadow-premium transition-all duration-500 hover:-translate-y-2 group cursor-pointer overflow-hidden bg-card">
                   <CardHeader>

@@ -27,14 +27,6 @@ const About = () => {
     },
   ];
 
-  // const milestones = [
-  //   { year: "1998", event: "Company Founded" },
-  //   { year: "2005", event: "Expanded Operations Internationally" },
-  //   { year: "2012", event: "Reached 250+ Completed Projects" },
-  //   { year: "2018", event: "Implemented Advanced Safety Protocols" },
-  //   { year: "2023", event: "Achieved 500+ Projects Milestone" },
-  // ];
-
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -104,60 +96,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Timeline */}
-      {/* <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">Our Journey</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Key milestones in our evolution
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="flex items-center space-x-8">
-                  <div className="w-24 flex-shrink-0">
-                    <div className="text-3xl font-bold text-accent">{milestone.year}</div>
-                  </div>
-                  <div className="flex-1 p-6 bg-card rounded-lg shadow-card border border-border">
-                    <p className="text-lg font-semibold text-foreground">{milestone.event}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Team Stats */}
-      {/* <section className="py-20 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Team by Numbers</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">50+</div>
-              <div className="text-lg">Engineers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">25</div>
-              <div className="text-lg">Countries</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">100+</div>
-              <div className="text-lg">Safety Awards</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">24/7</div>
-              <div className="text-lg">Support</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };

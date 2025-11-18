@@ -128,9 +128,39 @@ const Services = () => {
           </div>
         </div>
       </section>
+      
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-primary mb-4">Bitumen</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            We supply and distribute high-quality bitumen for road construction and infrastructure needs with reliable sourcing and timely delivery.            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+               { "step": "01", "title": "Bitumen Performance Grade", "description": "Engineered bitumen designed for specific climate and traffic conditions." },
+               { "step": "02", "title": "Penetration Grade Bitumen", "description": "Standard graded bitumen used for road construction and paving works." },
+               { "step": "03", "title": "Viscosity Grade Bitumen", "description": "Bitumen classified by viscosity for consistent performance in hot climates." },
+               { "step": "04", "title": "Oxidised Bitumen", "description": "Air-blown bitumen ideal for waterproofing, roofing, and industrial applications." },
+               { "step": "05", "title": "Bitumen Cutback", "description": "Bitumen blended with solvents for easy application in cold or remote areas." },
+               { "step": "06", "title": "Bitumen Emulsion", "description": "Water-based bitumen suitable for quick, safe, and eco-friendly roadwork applications." }
+              ]
+             .map((process, index) => (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">
+                  {process.step}
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">{process.title}</h3>
+                <p className="text-sm text-muted-foreground">{process.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-secondary">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">Our Process</h2>
@@ -159,7 +189,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="bg-gradient-primary rounded-2xl p-12 text-center text-primary-foreground">
             <h2 className="text-4xl font-bold mb-6">Need a Custom Solution?</h2>
