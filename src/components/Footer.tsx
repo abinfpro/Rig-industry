@@ -84,7 +84,7 @@ const Footer = () => {
                 <a href="https://www.google.com/maps/search/?api=1&query=P1-ELOB%20Office%20No.%20Hamriyah%20Free%20Zone%20Sharjah%20United%20Arab%20Emirates" 
                 target="_blank" 
                 rel="noopener noreferrer">
-                  P1-ELOB Office No. Hamriyah Free Zone Sharjah, United Arab Emirates
+                  P1-ELOB Office No. E2-126F-55, Hamriyah Free Zone, Sharjah, United Arab Emirates
                   </a>
               </li>
               <li className="flex items-center space-x-2 text-sm text-primary-foreground/80">

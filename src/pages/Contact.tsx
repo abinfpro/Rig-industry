@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["P1-ELOB Office No.Hamriyah Free Zone Sharjah United Arab Emirates"],
+      details: ["P1-ELOB Office No. E2-126F-55, Hamriyah Free Zone, Sharjah, United Arab Emirates"],
     },
     {
       icon: Phone,
@@ -201,7 +201,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-3xl mx-auto">
             {[
              {
-              region: "Middle East",office: "P1-ELOB Office, Hamriyah Free Zone, Sharjah",countries: "United Arab Emirates" },
+              region: "Middle East",office: "P1-ELOB Office No. E2-126F-55, Hamriyah Free Zone, Sharjah",countries: "United Arab Emirates" },
             ].map((location, index) => (
               <Card key={index} className="border-none shadow-card text-center">
                 <CardHeader>
